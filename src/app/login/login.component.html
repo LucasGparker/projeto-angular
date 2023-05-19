@@ -1,17 +1,32 @@
 <main>
-    <secton id=“section-login”>
-        <form class="row g-3">
-            <div class="col-auto">
-              <label for="staticUsuario" class="visually-hidden">Usuario</label>
-              <input type="text" class="form-control-plaintext" id="staticUsuario" placeholder="email@example.com">
-            </div>
-            <div class="col-auto">
-              <label for="inputPassword2" class="visually-hidden">Senha</label>
-              <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-            </div>
-            <div class="col-auto">
-              <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
-            </div>
-          </form>
+  <secton id=“section-login”>
+    <form class="row g-3">
+      <div class="col-auto">
+        <label for="staticUsuario" class="visually-hidden">Usuario</label>
+        <input type="text" class="form-control-plaintext" id="staticUsuario" placeholder="email@example.com">
+      </div>
+      <div class="col-auto">
+        <label for="inputPassword2" class="visually-hidden">Senha</label>
+        <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+      </div>
+    </form>
     </section>
-    </main>
+</main>
+
+<main>
+  <section id="section-login">
+    <form>
+      <div>
+        <label for=“usuario">Email</label>
+        <input name=“usuario" required type=“text" [(ngModel)]="usuario">
+        <br>
+        <label for="password">Password</label>
+        <input name="password" type="password" [(ngModel)]="senha">
+      </div>
+      <button (click)="fazerLogin()">Login</button>
+    </form>
+  </section>
+</main>
